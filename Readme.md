@@ -1,39 +1,98 @@
-# Blog Nest
+# Airbnb Clone Project
 
-Blog Nest is a MERN stack web application that allows authorized users to create and edit their posts. The application includes authentication using JWT, utilizes Quill.js for rich text editing, and is implemented as a Progressive Web App (PWA).
+Welcome to my Airbnb clone project built using the MERN stack. This project aims to replicate the core functionality of Airbnb, including user registration, accommodation listings, booking confirmation, and more.
 
-![Airbnb Screenshot](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/landing_page.png)
+1. **Landing Page**
+   ![Airbnb Screenshot](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/landing_page.png)
+
+2. **Register Page**
+   ![Register Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/register_page.png)
+
+3. **Login Page**
+   ![Login Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/login_page.png)
+
+4. **Landing Page with Username**
+   ![Landing Page with Username](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/landing_page_logged_in_user.png)
+
+5. **Detailed Accommodation Page**
+   ![Detailed Accommodation Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/detailed_accommodation_booking_page.png)
+
+6. **Photo Gallery Page**
+   ![Photo Gallery Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/photo_gallery_page.png)
+
+7. **Confirm Booking Page**
+   ![Confirm Booking Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/confirm_booking.png)
+
+8. **My Booking Page**
+   ![My Booking Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/my_booking.png)
+
+9. **My Profile Page**
+   ![My Profile Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/my_profile.png)
+
+10. **My Accommodation Page**
+    ![My Accommodation Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/my_accommodation.png)
+
+11. **Add New Place Page**
+    ![Add New Place Page](https://github.com/FALAK097/Airbnb-clone/raw/main/screenshots/add_new_place.png)
 
 ## Features
 
-- User Registration and Login: Users can register and log in to the application securely using JSON Web Tokens (JWT).
-- Secure Authentication: Passwords are securely hashed before being stored in the database.
-- Create and Edit Posts: Authorized users can create new posts with rich text content using Quill.js. They can also edit their own posts.
-- PWA Functionality: The application is designed as a Progressive Web App, offering mobile access and add-to-home-screen feature and fast loading.
-- Responsive Design: The UI is responsive and optimized for various screen sizes.
+- User registration and authentication.
+- Browse and search for accommodations.
+- View detailed accommodation information.
+- Photo gallery for each accommodation.
+- Booking confirmation process.
+- View and manage your bookings.
+- User profile management.
+- Host accommodations and add new places for rent.
 
 ## Technologies Used
 
-- Frontend:
+### Frontend
 
-  - React: JavaScript library for building user interfaces.
-  - React Router DOM: Handles routing and navigation within the application.
-  - Quill.js: Rich text editor for creating and editing posts.
-  - Service Worker: Enables Progressive Web App functionality for add-to-home-screen feature, fast loading, and caching.
-  - Fetch API: Used for making API requests to the backend.
+- React.js
+- HeroIcons
+- Tailwind CSS
 
-- Backend:
-  - Express.js: Web application framework.
-  - MongoDB: NoSQL database for storing user information and posts.
-  - Mongoose: ODM (Object Data Modeling) library for MongoDB.
-  - JSON Web Tokens (JWT): Used for secure user authentication and authorization.
-  - Bcrypt.js: Library for hashing and salting user passwords.
-  - Nodemon: Used for automatic server restart during development.
+### Backend
+
+- Node.js
+- Express.js
+
+### Database
+
+- MongoDB
+
+### Authentication
+
+- JSON Web Tokens (JWT)
+- Bcrypt
+
+### Styling
+
+- CSS
+- Tailwind CSS
+
+### Data Handling
+
+- Axios
+
+### Server Tools
+
+- Nodemon
+- Cookie Parser
+- Multer
+- fs
+
+### Image Handling
+
+- Multer
+- Image Downloader
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/FALAK097/Blog-Nest.git`
-2. Navigate to the project directory: `cd Blog-Nest`
+1. Clone the repository: `git clone https://github.com/FALAK097/Airbnb-clone.git`
+2. Navigate to the project directory: `cd Airbnb-clone`
 3. Install dependencies for both client and server: `cd client && yarn install && cd ../api && yarn install && cd ..`
 4. Configure environment variables in `api/.env` for MongoDB connection, JWT secret, etc.
 5. Start the server: `cd api && nodemon index.js`
@@ -48,5 +107,3 @@ Contributions are welcome! If you encounter any bugs, have feature suggestions, 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Happy Blogging with Blog Nest!
