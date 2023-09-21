@@ -48,46 +48,14 @@ Welcome to my Airbnb clone project built using the MERN stack. This project aims
 
 ## Technologies Used
 
-### Frontend
-
-- React.js
-- HeroIcons
-- Tailwind CSS
-
-### Backend
-
-- Node.js
-- Express.js
-
-### Database
-
-- MongoDB
-
-### Authentication
-
-- JSON Web Tokens (JWT)
-- Bcrypt
-
-### Styling
-
-- CSS
-- Tailwind CSS
-
-### Data Handling
-
-- Axios
-
-### Server Tools
-
-- Nodemon
-- Cookie Parser
-- Multer
-- fs
-
-### Image Handling
-
-- Multer
-- Image Downloader
+- **Frontend**: React.js, HeroIcons, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT), Bcrypt
+- **Styling**: CSS, Tailwind CSS
+- **Data Handling**: Axios
+- **Server Tools**: Nodemon, Cookie Parser, Multer, fs
+- **Image Handling**: Multer, Image Downloader
 
 ## Getting Started
 
