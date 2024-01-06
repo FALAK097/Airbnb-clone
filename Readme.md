@@ -69,9 +69,3 @@ Welcome to my Airbnb clone project built using the MERN stack. This project aims
 ## Contributing
 
 Contributions are welcome! If you encounter any bugs, have feature suggestions, or would like to contribute to the project, please feel free to submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
