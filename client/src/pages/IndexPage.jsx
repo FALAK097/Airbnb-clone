@@ -12,14 +12,14 @@ export default function IndexPage() {
     });
   }, []);
   return (
-    <div className="mt-8 grid gap-x-6 gap-y-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+    <div className="grid grid-cols-2 mt-8 gap-x-6 gap-y-8 md:grid-cols-3 lg:grid-cols-3">
       {places.length > 0 &&
         places.map((place) => (
           <Link to={'/place/' + place._id}>
-            <div className="bg-gray-500 mb-2 rounded-2xl flex">
+            <div className="flex mb-2 bg-gray-500 rounded-2xl">
               {place.photos?.[0] && (
                 <Image
-                  className="rounded-2xl object-cover aspect-square"
+                  className="object-cover rounded-2xl aspect-square"
                   src={place.photos?.[0]}
                   alt=""
                 />

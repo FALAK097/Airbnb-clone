@@ -10,12 +10,14 @@ const cookieParser = require('cookie-parser');
 const imageDownloader = require('image-downloader');
 const multer = require('multer');
 const fs = require('fs');
-
+const path = require('path');
 require('dotenv').config();
+
 const app = express();
 
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET;
+const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(cookieParser());
@@ -26,6 +28,11 @@ app.use(
     origin: 'http://localhost:5173',
   })
 );
+app.use(express.static(path.join(__dirname, '/client/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
 
 mongoose.connect(process.env.MONGO_URL);
 
@@ -240,4 +247,8 @@ app.get('/bookings', async (req, res) => {
   res.json(await Booking.find({ user: userData.id }).populate('place'));
 });
 
-app.listen(4000);
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});

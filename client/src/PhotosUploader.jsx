@@ -52,17 +52,17 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
         />
         <button
           onClick={addPhotoByLink}
-          className="bg-gray-200 px-4 rounded-2xl">
+          className="px-4 bg-gray-200 rounded-2xl">
           Add&nbsp;Photos
         </button>
       </div>
-      <div className="mt-2 grid gap-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+      <div className="grid grid-cols-3 gap-2 mt-2 md:grid-cols-4 lg:grid-cols-6">
         {addedPhotos.length > 0 &&
           addedPhotos.map((link) => (
-            <div className="h-32 flex relative" key={link}>
+            <div className="relative flex h-32" key={link}>
               <img
-                className="rounded-2xl w-full object-cover"
-                src={'http://localhost:4000/uploads/' + link}
+                className="object-cover w-full rounded-2xl"
+                src={'http://localhost:5000/uploads/' + link}
                 //   src={
                 //     link.startsWith('http')
                 //       ? link
@@ -77,7 +77,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
               />
               <button
                 onClick={(ev) => removePhoto(ev, link)}
-                className="cursor-pointer absolute bottom-1 right-1 text-white bg-black bg-opacity-50 py-2 px-3 rounded-2xl">
+                className="absolute px-3 py-2 text-white bg-black bg-opacity-50 cursor-pointer bottom-1 right-1 rounded-2xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -94,7 +94,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
               </button>
               <button
                 onClick={(ev) => selectAsMainPhoto(ev, link)}
-                className="cursor-pointer absolute bottom-1 left-1 text-white bg-black bg-opacity-50 py-2 px-3 rounded-2xl">
+                className="absolute px-3 py-2 text-white bg-black bg-opacity-50 cursor-pointer bottom-1 left-1 rounded-2xl">
                 {link === addedPhotos[0] && (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
               </button>
             </div>
           ))}
-        <label className="h-32 flex justify-center items-center gap-1 border bg-transparent rounded-2xl cursor-pointer p-2 text-2xl text-gray-600">
+        <label className="flex items-center justify-center h-32 gap-1 p-2 text-2xl text-gray-600 bg-transparent border cursor-pointer rounded-2xl">
           <input
             multiple
             type="file"
