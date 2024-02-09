@@ -17,7 +17,6 @@ const app = express();
 
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET;
-const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(cookieParser());
