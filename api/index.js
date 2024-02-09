@@ -24,7 +24,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(
   cors({
     credentials: true,
-    origin: 'http://localhost:5173',
+    origin: 'https://airbnb-clone-ysty.onrender.com/',
   })
 );
 app.use(express.static(path.join(__dirname, '/client/dist')));
