@@ -62,7 +62,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
             <div className="relative flex h-32" key={link}>
               <img
                 className="object-cover w-full rounded-2xl"
-                src={'http://localhost:5000/uploads/' + link}
+                src={'https://airbnb-clone-ysty.onrender.com/uploads/' + link}
                 //   src={
                 //     link.startsWith('http')
                 //       ? link

@@ -3,6 +3,6 @@ export default function Image({ src, ...rest }) {
   src =
     src && src.includes('https://')
       ? src
-      : 'http://localhost:5000/uploads/' + src;
+      : 'https://airbnb-clone-ysty.onrender.com/uploads/' + src;
   return <img {...rest} src={src} alt={''} />;
 }

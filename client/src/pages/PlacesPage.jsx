@@ -44,7 +44,10 @@ export default function PlacesPage() {
                 {place.photos.length > 0 && (
                   <img
                     className="object-cover rounded-2xl"
-                    src={'http://localhost:5000/uploads/' + place.photos[0]}
+                    src={
+                      'https://airbnb-clone-ysty.onrender.com/uploads/' +
+                      place.photos[0]
+                    }
                     alt={place.title}
                   />
                 )}
